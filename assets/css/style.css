@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+    
+
+.desktop-nav {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #327355;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+
+
+
+.desktop-nav img {
+    width: 12rem;
+    height: auto;
+}
+
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem ;
+    gap: 3rem;
+    list-style: none;
+}
+.nav-links a  {
+    
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    transition: all ease-in-out 300ms;
+    display: block;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+.login-btn {
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 15px 60px;
+    transition: all ease-in-out 300ms;
+}
+.login-btn:hover {
+    transform: scale(1.1);
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 24px;
+    cursor: pointer;
+    
+}
+.menu-icon span {
+    width: 100%;
+    height: 3px;
+    background-color:black ;
+}
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#more {
+    height: calc(80vh - 2rem);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.more-area {
+    display: flex;
+    gap: 5rem;
+    
+
+
+}
+.more-area img {
+    max-width: 450px;
+    max-height: 500px;
+    border-radius: 20px;
+}
+
+.about {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    height: 100%;
+    padding: 3rem;
+    align-self: center;
+    text-align: center;
+
+
+}
+.about h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+
+
+
+
+
+.blog-area {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    row-gap: 4rem;
+    justify-content: space-evenly;
+    
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+
+
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    flex: 2;
+}
+.about-content {
+    padding: 1rem;
+    flex: 1;
+
+}
+
+
+
