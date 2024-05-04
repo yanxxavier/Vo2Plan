@@ -58,8 +58,8 @@
     transform: scale(1.1);
 }
 .login-btn {
-    background-color: #1c1c1c;
-    color: white;
+    background-color: white;
+    color: #1c1c1c;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -70,7 +70,9 @@
     transition: all ease-in-out 300ms;
 }
 .login-btn:hover,
-.card:hover {
+.card:hover,
+.form-button:hover {
+ 
     transform: scale(1.1);
 }
 
@@ -119,7 +121,7 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     height: 100%;
-    padding: 3rem;
+    padding: 1.5rem;
     align-self: center;
     text-align: center;
 
@@ -203,7 +205,7 @@ section {
 .form h4 {
     color: white;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 .calculadora-area img {
     flex: 1;
@@ -211,14 +213,70 @@ section {
     height: 550px;
     border-radius: 0 10px 10px 0;
 }
+.form label {
+    color: white;
+    font-size: 1.5rem;
+}
 
 .form input {
     border: 0;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     outline: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background-color: #1c1c1c;
+    color: white;
+}
+.form input::placeholder {
+    color: white;
+    padding-left: 5px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+.check-box__area {
+    padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  input[type="radio"] {
+
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    width: 12px; 
+    height: 12px;
+    margin-left: 5px;
+    border: 2px solid #007bff; 
+    border-radius: 50%; 
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+  }
+  input[type="radio"]:checked {
+    background-color: black; 
+  }
 
 
+  .form-button {
+    background-color: #1c1c1c;
+    border: none;
+    border-radius: 15px;
+    padding: 0.75rem 3rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+  }
+  

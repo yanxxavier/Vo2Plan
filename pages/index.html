@@ -105,26 +105,26 @@
                 <form class="form js-form">
                     <h4>Vo2 Teste de Cooper</h4>
                     <label for="dist__input">Distância: <br/>
-                        <input type="number" id="dist__input" placeholder="Metros">
+                        <input type="number" id="js-distance" placeholder="Metros" required>
                     </label>
                         
                     <label for="age__input">Idade: <br/>
-                        <input type="number" id="age__input" placeholder="Anos">
+                        <input type="number" id="age__input" placeholder="Anos" required>
                     </label>
                         
                     <div class="check-box__area">
                         <label for="masc-check">Masculino</label>
-                            <input type="checkbox" id="masc-check" name="genero">
+                            <input type="radio" value="masculino" name="generos" required>
                         <label for="fem-check">Feminino</label>
-                            <input type="checkbox" id="fem-check" name="genero">
+                            <input type="radio" value="feminino" name="generos" required>
                             
                     </div>
                     
                     
-                    <button class="form-button js-button">CALCULAR</button>
+                    <button class="form-button js-button" type="submit">CALCULAR</button>
 
                     <div class="result js-result">
-                        aa
+                        
                     </div>
                 </form>
 
