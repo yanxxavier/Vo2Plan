@@ -1,4 +1,5 @@
 @media (max-width: 1100px) {
+    
     .more-area img {
         width: 400px;
 
@@ -7,6 +8,8 @@
         font-size: 0.9rem;
 
     }
+    
+    
 }
 
 @media (max-width: 940px) {
@@ -19,20 +22,42 @@
     }
     .nav-links {
         display: none;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .open .nav-links {
+        display: block;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
     .open {
         position: absolute;
-        top: 20vh;
-        right: 0;
-        width: 50vh;
-        height: 80vh;
-        background-color: #327355;
+        top: 27vh;
+        width: 77vh;
+        height: 12vh;
+        background-color: #053c78;
         gap: 0.75rem;
         justify-content: space-evenly;
         display: flex;
         align-items: center;
-        flex-direction: column;
+        border-radius: 10px;
+        left: 44%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+        
+        
+        
 
+    }
+    #more {
+        margin-top: 4rem;
     }
     
     .more-area {
@@ -53,13 +78,43 @@
 
         grid-template-columns: repeat(2, 250px); 
     }
-    
+    .form {
+        padding: 1rem;
+    }
+    .form h4 {
+        font-size: 1.25rem;
+    }
+    .form label {
+       
+        font-size: 1.2rem;
+    }
+    input[type="radio"] + label {      
+        padding-left: 10px;
+    }
+    .form-img{
+     
+        width: 300px;
+        height: 450px;
+      
+    }
+    .tooltip {
+        left: 113%;
+        top: 0;
+      }
 }
 
 @media (max-width: 650px) {
     
+    
     .open {
+        flex-direction: column;
+        top: 20vh;
+        right: 0;
         width: 100%;
+        height: 84vh;
+        left: -48px;
+        border-radius: 0;
+        transform: none
     }
 
     .more-area {
@@ -92,4 +147,22 @@
 
         grid-template-columns: 250px; 
     }
+    .form {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .form h4 {
+        font-size: 1.25rem;
+    }
+    .form label {
+        font-size: 0.9rem;
+    }
+    .form-img{
+        display: none;
+      
+    }
+    .tooltip {
+        left: 0;
+        top: 0;
+      }
 }

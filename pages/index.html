@@ -51,6 +51,7 @@
        
         <section id="blog">
 
+
             <h1 class="title">Últimas Notícias</h1>
             <div class="blog-area container">
                 <a class="card" href="">      
@@ -103,13 +104,18 @@
             <h1 class="title">Calculadora</h1>
             <div class="calculadora-area">
                 <form class="form js-form">
-                    <h4>Vo2 Teste de Cooper</h4>
+                    <div class="tittle_question">
+                        <h4>Vo2 Teste de Cooper</h4>
+                        <img class="question-img" src="../assets/images/ajuda-24.png" alt="Explicação do teste">
+                        <div class="tooltip">É um teste que tem como objetivo avaliar a capacidade cardiorrespiratória através da análise da distância percorrida durante 12 minutos, em uma corrida ou caminhada</div>
+                    </div> 
+                    
                     <label for="dist__input">Distância: <br/>
                         <input type="number" id="js-distance" placeholder="Metros" required>
                     </label>
                         
                     <label for="age__input">Idade: <br/>
-                        <input type="number" id="age__input" placeholder="Anos" required>
+                        <input type="number" id="age__input" placeholder="Acima de 13 anos" required>
                     </label>
                         
                     <div class="check-box__area">
@@ -124,11 +130,36 @@
                     <button class="form-button js-button" type="submit">CALCULAR</button>
 
                     <div class="result js-result">
-                        
+                        <p class="js-vo2_result"></p>
+                        <p class="js-classification_result"></p>
                     </div>
                 </form>
+                
+                 <img  class="form-img" src="../assets/images/forms-bg.jpg" alt="corredora no parque"> 
+            </div>
+        </section>
 
-                <img src="../assets/images/forms-bg.jpg" alt="corredora no parque">
+        <section id="planilhas">
+            <h1 class="title">Planilhas</h1>
+            <div class="planilhas-area">
+                <div class="planilhas-5a10">
+                    <img class="planilhas-img2" src="https://s3.sa-east-1.amazonaws.com/static.activodeporte.com/brasil/uploads/2020/07/06123206/Planilha22-868x265.jpg" alt="corredora aquecendo">
+                    <h3 class="title-inner">5 - 10 K</h3>
+                    <p class="weeks">6 a 10 semanas</p>
+                    <div class="runner-icon">
+                        <img src="../assets/images/runner-icon.png" alt="icone corredor">
+                    </div>
+                    <span class="level">Iniciante - Intermediário</span>
+                </div>
+                <div class="planilhas-12a42">
+                    <img class="planilhas-img1" src="../assets/images/planilha-img1.jpeg" alt="corredora aquecendo">
+                    <h3 class="title-inner">12 - 42 K</h3>
+                    <p class="weeks">8 a 16 semanas</p>
+                    <div class="runner-icon">
+                        <img src="../assets/images/runner-icon.png" alt="icone corredor">
+                    </div>
+                    <span class="level">Avançado</span>
+                </div>
             </div>
         </section>
         

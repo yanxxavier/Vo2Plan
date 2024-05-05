@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
     
 
 .desktop-nav {
@@ -25,6 +28,31 @@
     padding-right: 5%;
 
 }
+.tittle_question {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    position: relative;
+
+}
+.question-img {
+    width: 24px;
+    height: auto;
+    cursor: help;
+}
+.tooltip {
+    display: none; 
+    position: absolute;
+    left: 110%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .tittle_question:hover .tooltip {
+    display: block;
+  }
 
 
 
@@ -36,12 +64,15 @@
 
 
 
+
 .nav-links {
     display: flex;
     align-items: center;
     margin-left: 3rem ;
     gap: 3rem;
     list-style: none;
+    transition: transform 0.3s ease; 
+    
 }
 .nav-links a  {
     
@@ -71,7 +102,8 @@
 }
 .login-btn:hover,
 .card:hover,
-.form-button:hover {
+.form-button:hover,
+.runner-icon:hover {
  
     transform: scale(1.1);
 }
@@ -91,8 +123,7 @@
     background-color:black ;
 }
 section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
 #more {
     height: calc(80vh - 2rem);
@@ -207,7 +238,7 @@ section {
     text-align: center;
     font-size: 1.75rem;
 }
-.calculadora-area img {
+.form-img {
     flex: 1;
     max-width: 600px;
     height: 550px;
@@ -279,4 +310,73 @@ input[type="radio"] + label {
     cursor: pointer;
     transition: all ease-in-out 300ms;
   }
+
+  .planilhas-area {
+    display: flex;
+    gap: 1rem;
+  }
+  .planilhas-img1 {
+    width: 868px;
+    height: 265px;
+    object-fit: cover;
+    
+  }
   
+  .title-inner {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    top: 10%;
+    left: 5%;
+  }
+  .weeks {
+    color: white;
+    top: 33%;
+    left: 6%;
+    font-size: 1.2rem;
+    font-weight:500
+  }
+  .level {
+    background-color: #007bff;
+    padding: 5px 25px;
+    bottom: -3%;
+    right: 8%;
+    border-radius: 10px;
+    
+  }
+  .runner-icon {
+    background-color: #007bff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    bottom: -5%;
+    left: 4%;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+
+
+
+  }
+
+  .planilhas-5a10,
+  .planilhas-12a42 {
+    position: relative;
+    
+    
+  }
+
+  .planilhas-img2,
+  .planilhas-img1 {
+    border-radius: 10px 10px 0 0;
+  }
+  
+
+  .title-inner,
+  .weeks,
+  .level,
+  .runner-icon {
+    position: absolute;
+  }
