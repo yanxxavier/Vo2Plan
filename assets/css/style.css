@@ -124,6 +124,7 @@ html {
 }
 section {
     padding: 2rem;
+    
 }
 #more {
     height: calc(80vh - 2rem);
@@ -215,13 +216,15 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
 }
 .calculadora-area {
     display: flex;
     background-color: #053c78;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
     border-radius: 10px;
-
+    margin-top: 3rem;
 }
 .form {
     display: flex;
@@ -314,13 +317,9 @@ input[type="radio"] + label {
   .planilhas-area {
     display: flex;
     gap: 1rem;
+    justify-content: center;
   }
-  .planilhas-img1 {
-    width: 868px;
-    height: 265px;
-    object-fit: cover;
-    
-  }
+  
   
   .title-inner {
     color: white;
@@ -371,6 +370,9 @@ input[type="radio"] + label {
   .planilhas-img2,
   .planilhas-img1 {
     border-radius: 10px 10px 0 0;
+    width: 700px;
+    height: 220px;
+    object-fit: cover;
   }
   
 

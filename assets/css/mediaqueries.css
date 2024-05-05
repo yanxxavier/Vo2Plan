@@ -1,3 +1,14 @@
+@media (max-width: 1500px) {
+    .planilhas-img2,
+    .planilhas-img1 {
+    border-radius: 10px 10px 0 0;
+    width: 550px;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+}
+
 @media (max-width: 1100px) {
     
     .more-area img {
@@ -7,6 +18,31 @@
     .about p {
         font-size: 0.9rem;
 
+    }
+    .planilhas-area {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .planilhas-img2,
+    .planilhas-img1 {
+        width: 700px;
+        height: 220px;
+    }
+    .title-inner {
+        color: white;
+        font-size: 2rem;
+       
+    }
+    .weeks {     
+        font-size: 0.9em;
+      }
+    .level { 
+        padding: 5px 20px;
+        
+        
     }
     
     
@@ -38,7 +74,7 @@
         }
     }
     .open {
-        position: absolute;
+        position: fixed;
         top: 27vh;
         width: 77vh;
         height: 12vh;
@@ -100,7 +136,34 @@
     .tooltip {
         left: 113%;
         top: 0;
+    }
+    .planilhas-area {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .planilhas-img2,
+    .planilhas-img1 {
+        width: 600px;
+        height: 200px;
+    }
+    .title-inner {
+        color: white;
+        font-size: 2rem;
+       
+    }
+    .weeks {     
+        font-size: 0.9em;
       }
+    .level {
+      
+        padding: 5px 20px;
+        
+        
+    }
 }
 
 @media (max-width: 650px) {
@@ -165,4 +228,23 @@
         left: 0;
         top: 0;
       }
+    .planilhas-img2,
+    .planilhas-img1 {
+        width: 350px;
+        height: 125px;
+    }
+    .title-inner {
+        color: white;
+        font-size: 1.3rem;
+       
+    }
+    .weeks {     
+        font-size: 0.8rem;
+      }
+    .level {
+        font-size: 0.7rem;
+        padding: 5px 20px;
+        
+        
+    }
 }
