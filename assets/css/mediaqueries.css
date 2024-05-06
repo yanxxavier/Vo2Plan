@@ -247,4 +247,39 @@
         
         
     }
+    .planilha-content {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        padding: 0.5rem;
+        
+    }
+    th {
+        border-bottom: 2px solid #007bff;
+        font-size: 1rem;
+        color: white;
+        
+    }
+    td {
+        font-size: 0.7rem;
+        
+    }
+    th, td {
+        text-align: center;
+        padding: 1rem;
+        
+    }
+    .options-table img {
+        cursor: pointer;
+        width: 20px;
+        height: auto;
+    }
+    .planilha-box {
+        width: 350px;
+    }
+    
 }

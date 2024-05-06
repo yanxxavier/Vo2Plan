@@ -1,29 +1,15 @@
-function toggleMenu () {
+function toggleNav () { // Funcao para o botao Nav-Bar
    const button = document.querySelector('.js-menu');
    const links = document.querySelector('.nav-links');
    const linkState = links.classList;
-   
+
     linkState.toggle('open')
-   
-   
-   
+    
 }
 
-
-function calcCooper(event) {
-    event.preventDefault();
-
-
-    const vo2Result = document.querySelector('.js-vo2_result')
-    const classResult = document.querySelector('.js-classification_result')
-    let distance = document.getElementById('js-distance').value;
-    let age = document.getElementById('age__input').value;
+function genderCheck () { // Funcao para checar o genero
     let radioBtns = document.querySelectorAll("input[name = 'generos']");
-    let classification;
     let gender;
-    let vo2 = (0.0268 * distance) - 11.3;
-
-
     let findSelected = () => {
         return document.querySelector("input[name = 'generos']:checked").value; 
     }
@@ -31,13 +17,27 @@ function calcCooper(event) {
     radioBtns.forEach(radioBtn => {
         radioBtn.addEventListener('change', findSelected)
     })
-    gender = findSelected();
     
+    return gender = findSelected();
 
+}
 
+function calcCooper(event) { //Funcao de calculo vo2
+    event.preventDefault();
 
+    const vo2Result = document.querySelector('.js-vo2_result')
+    const classResult = document.querySelector('.js-classification_result')
 
-     if(gender == 'masculino') {
+    let distance = document.getElementById('js-distance').value;
+    let age = document.getElementById('age__input').value;
+    
+    let classification;
+    
+    let vo2 = (0.0268 * distance) - 11.3;
+
+    let newGender = genderCheck ();
+    
+    if(newGender == 'masculino') {
         if (age >= 13 && age <= 19) { //primeira class fem
             if (vo2 < 35) {
                 classification = "Muito Pobre";
@@ -130,7 +130,7 @@ function calcCooper(event) {
             }
             
         }
-    }else if(gender == 'feminino') {
+    }else if(newGender == 'feminino') {
         if (age >= 13 && age <= 19) { //primeira class fem
             if (vo2 < 25) {
                 classification = "Muito Pobre";
@@ -239,3 +239,17 @@ function calcCooper(event) {
 
 const calcForm = document.querySelector('.js-form');
 calcForm.addEventListener('submit', calcCooper);
+
+
+
+
+
+
+
+
+
+
+
+function planContentOpen() {
+    
+}
