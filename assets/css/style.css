@@ -384,14 +384,24 @@ input[type="radio"]:checked {
     position: absolute;
 }
 
-.planilha-box {
-    background-color: #BFBFBF;
+.planilha-box1,
+.planilha-box2 {
+    background-color: white;
     border-radius: 10px;
 }
-.planilha-content {
+.planilha-color {
+    background-color: #BFBFBF;
+}
+.planilha-content1,
+.planilha-content2 {
     margin-top: 1rem;
-    display: flex;
+    display: none;
     justify-content: space-around;
+}
+
+.planilha-display {
+    display: flex;
+
 }
 table {
     border-collapse: collapse;
@@ -417,6 +427,7 @@ th, td {
 .options-table img {
     cursor: pointer;
 }
+
 
 
 

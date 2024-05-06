@@ -250,6 +250,28 @@ calcForm.addEventListener('submit', calcCooper);
 
 
 
-function planContentOpen() {
-    
+
+function planContentOpen1() {
+    const planBox1 = document.querySelector('.planilha-box1');
+    const planBoxClass1 = planBox1.classList;
+    const planContent1 = document.querySelector('.planilha-content1')
+    const planContentClass1 = planContent1.classList;
+
+
+
+    planContentClass1.toggle('planilha-display');
+    planBoxClass1.toggle('planilha-color');
+
+
+}
+function planContentOpen2() {
+    const planBox2 = document.querySelector('.planilha-box2');
+    const planBoxClass2 = planBox2.classList;
+    const planContent2 = document.querySelector('.planilha-content2')
+    const planContentClass2 = planContent2.classList;
+
+    planContentClass2.toggle('planilha-display');
+    planBoxClass2.toggle('planilha-color');
+
+
 }
