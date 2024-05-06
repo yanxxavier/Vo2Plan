@@ -103,7 +103,8 @@ html {
 .login-btn:hover,
 .card:hover,
 .form-button:hover,
-.runner-icon:hover {
+.runner-icon:hover,
+.footer-socials img:hover {
  
     transform: scale(1.1);
 }
@@ -427,9 +428,7 @@ th, td {
 .options-table img {
     cursor: pointer;
 }
-#planilhas  {
-    height: calc(100vh - 30vh);
-}
+
 
 footer {
     margin-top: 5rem;
@@ -441,8 +440,23 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    
+}
+.footer-info {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.footer-info span {
+    color: #1c1c1c;
+    font-weight: bolder;
 }
 
+.footer-socials img {
+    margin-left: 12px;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
 
 
 
