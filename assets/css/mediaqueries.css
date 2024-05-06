@@ -87,7 +87,7 @@
         left: 44%;
         transform: translate(-50%, -50%);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-        
+        position: absolute; 
         
         
 
@@ -177,7 +177,8 @@
         height: 84vh;
         left: -48px;
         border-radius: 0;
-        transform: none
+        transform: none;
+        position: absolute;
     }
 
     .more-area {
@@ -250,7 +251,7 @@
     .planilha-content1,
     .planilha-content2 {
         margin-top: 1rem;
-        display: flex;
+        display: none;
         justify-content: space-around;
     }
     table {
