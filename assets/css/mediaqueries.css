@@ -16,7 +16,7 @@
 
     }
     .about p {
-        font-size: 0.9rem;
+        font-size: 1rem;
 
     }
     .planilhas-area {
@@ -196,7 +196,7 @@
         font-size: 1.3rem;
     }
     .about p {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
 
     }
     .about {
@@ -210,6 +210,9 @@
     .blog-area {
 
         grid-template-columns: 250px; 
+    }
+    .calculadora-area {
+        padding: 1.3rem;
     }
     .form {
         padding: 1rem;
@@ -260,7 +263,7 @@
     th {
         border-bottom: 2px solid #007bff;
         font-size: 1rem;
-        color: white;
+        color: #1c1c1c;
         
     }
     td {
