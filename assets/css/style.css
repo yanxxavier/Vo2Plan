@@ -43,7 +43,7 @@ html {
 .tooltip {
     display: none; 
     position: absolute;
-    left: 110%;
+    left: 155%;
     top: 0;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
@@ -103,9 +103,11 @@ html {
 .login-btn:hover,
 .card:hover,
 .form-button:hover,
-.runner-icon:hover,
 .footer-socials img:hover {
  
+    transform: scale(1.1);
+}
+.animation {
     transform: scale(1.1);
 }
 
@@ -385,16 +387,14 @@ input[type="radio"]:checked {
     position: absolute;
 }
 
-.planilha-box1,
-.planilha-box2 {
+.planilha-box {
     background-color: white;
     border-radius: 10px;
 }
 .planilha-color {
-    background-color: #BFBFBF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
 }
-.planilha-content1,
-.planilha-content2 {
+.planilha-content {
     margin-top: 1rem;
     display: none;
     justify-content: space-around;
@@ -413,7 +413,7 @@ table {
 th {
     border-bottom: 2px solid #007bff;
     font-size: 1.75rem;
-    color: white;
+    color: #1c1c1c;
     
 }
 td {

@@ -105,9 +105,9 @@
             <div class="calculadora-area">
                 <form class="form js-form">
                     <div class="tittle_question">
-                        <h4>Vo2 Teste de Cooper</h4>
+                        <h4>Vo2 & FCM</h4>
                         <img class="question-img" src="assets/images/ajuda-24.png" alt="Explicação do teste">
-                        <div class="tooltip">É um teste que tem como objetivo avaliar a capacidade cardiorrespiratória através da análise da distância percorrida durante 12 minutos, em uma corrida ou caminhada</div>
+                        <div class="tooltip">É um teste que tem como objetivo avaliar a capacidade cardiorrespiratória através da análise da distância percorrida durante 12 minutos, em uma corrida ou caminhada. <br> FCM = Frequência Máxima Cardíaca</div>
                     </div> 
                     
                     <label for="dist__input">Distância: <br/>
@@ -132,6 +132,7 @@
                     <div class="result js-result">
                         <p class="js-vo2_result"></p>
                         <p class="js-classification_result"></p>
+                        <p class="js-fcm__result"></p>
                     </div>
                 </form>
                 
@@ -142,17 +143,17 @@
         <section id="planilhas">
             <h1 class="title">Planilhas</h1>
             <div class="planilhas-area">
-                <div class="planilha-box1">
+                <div class="planilha-box js-box">
                     <div class="planilhas-5a10">
                         <img class="planilhas-img2" src="https://s3.sa-east-1.amazonaws.com/static.activodeporte.com/brasil/uploads/2020/07/06123206/Planilha22-868x265.jpg" alt="corredora aquecendo">
                         <h3 class="title-inner">3 - 10 K</h3>
                         <p class="weeks">8 semanas</p>
-                        <div class="runner-icon">
-                            <img src="assets/images/runner-icon.png" alt="icone corredor" onclick="planContentOpen1()">
+                        <div class="runner-icon js-runner__button">
+                            <img src="assets/images/runner-icon.png" alt="icone corredor">
                         </div>
                         <span class="level">Iniciante - Intermediário</span> 
                     </div>
-                    <div class="planilha-content1">
+                    <div class="planilha-content js-content">
                         <table>
                             <thead>
                                 <tr>
@@ -166,27 +167,26 @@
                                     <td>3KM</td>
                                     <td>8 Semanas</td>
                                     <td class="options-table">
-                                        <img src="assets/images/heart.png" alt="Favoritar planilha">
-                                        <img src="assets/images/dowload.png" alt="Dowload planilha">
-                                        <img src="assets/images/share.png" alt="Favoritar planilha">
+                                        <img width="0" src="assets/images/eye.png" alt="Visualizar planilha">
+                                        <a href="https://drive.google.com/file/d/1f_EfeGQn4ViYeYxDrkAfGqpOsw3xOq0y/view" target="_blank"><img src="assets/images/dowload.png" alt="Dowload planilha"></a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>5KM</td>
                                     <td>8 Semanas</td>
                                     <td class="options-table">
-                                        <img src="assets/images/heart.png" alt="Favoritar planilha">
-                                        <img src="assets/images/dowload.png" alt="Dowload planilha">
-                                        <img src="assets/images/share.png" alt="Favoritar planilha">
+                                        <img width="0" src="assets/images/eye.png" alt="Visualizar planilha">
+                                        <a href="https://drive.google.com/file/d/1tmfLi8ImwOijDPrreWRrpZWxiZgn571r/view" target="_blank"><img src="assets/images/dowload.png" alt="Dowload planilha"></a>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>10KM</td>
                                     <td>8 Semanas</td>
                                     <td class="options-table">
-                                        <img src="assets/images/heart.png" alt="Favoritar planilha">
-                                        <img src="assets/images/dowload.png" alt="Dowload planilha">
-                                        <img src="assets/images/share.png" alt="Favoritar planilha">
+                                        <img width="0" src="assets/images/eye.png" alt="Visualizar planilha">
+                                        <a href="https://drive.google.com/file/d/1eWdd_t04enHVLw2bTx0tPxGhqNkDjC-w/view" target="_blank"><img src="assets/images/dowload.png" alt="Dowload planilha"></a>
+                                        
                                     </td>
                                 </tr> 
                             </tbody>
@@ -195,17 +195,17 @@
 
                 </div>
                 
-                <div class="planilha-box2">
+                <div class="planilha-box js-box">
                     <div class="planilhas-12a42">
                         <img class="planilhas-img1" src="assets/images/planilha-img1.jpeg" alt="corredora aquecendo">
                         <h3 class="title-inner">16 - 42 K</h3>
                         <p class="weeks">10 a 16 semanas</p>
-                        <div class="runner-icon">
-                            <img src="assets/images/runner-icon.png" alt="icone corredor" onclick="planContentOpen2()">
+                        <div class="runner-icon js-runner__button">
+                            <img src="assets/images/runner-icon.png" alt="icone corredor">
                         </div>
                         <span class="level">Avançado</span>
                     </div>
-                    <div class="planilha-content2">
+                    <div class="planilha-content js-content">
                         <table>
                             <thead>
                                 <tr>
@@ -219,27 +219,27 @@
                                     <td>16KM</td>
                                     <td>8 Semanas</td>
                                     <td class="options-table">
-                                        <img src="assets/images/heart.png" alt="Favoritar planilha">
-                                        <img src="assets/images/dowload.png" alt="Dowload planilha">
-                                        <img src="assets/images/share.png" alt="Favoritar planilha">
+                                        <img width="0" src="assets/images/eye.png" alt="Visualizar planilha">
+                                        <a href="" target="_blank"><img src="assets/images/dowload.png" alt="Dowload planilha"></a>
+                                  
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>21KM</td>
                                     <td>12 Semanas</td>
                                     <td class="options-table">
-                                        <img src="assets/images/heart.png" alt="Favoritar planilha">
-                                        <img src="assets/images/dowload.png" alt="Dowload planilha">
-                                        <img src="assets/images/share.png" alt="Favoritar planilha">
+                                        <img width="0" src="assets/images/eye.png" alt="Visualizar planilha">
+                                        <a href="" target="_blank"><img src="assets/images/dowload.png" alt="Dowload planilha"></a>
+                                       
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>42KM</td>
                                     <td>16 Semanas</td>
                                     <td class="options-table">
-                                        <img src="assets/images/heart.png" alt="Favoritar planilha">
-                                        <img src="assets/images/dowload.png" alt="Dowload planilha">
-                                        <img src="assets/images/share.png" alt="Favoritar planilha">
+                                        <img width="0" src="assets/images/eye.png" alt="Visualizar planilha">
+                                        <a href="" target="_blank"><img src="assets/images/dowload.png" alt="Dowload planilha"></a>
+                                    
                                     </td>
                                 </tr> 
                             </tbody>

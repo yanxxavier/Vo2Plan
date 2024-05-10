@@ -24,6 +24,7 @@ function genderCheck () { // Funcao para checar o genero
 
 function calcCooper(event) { //Funcao de calculo vo2
     event.preventDefault();
+    const fcm = document.querySelector('.js-fcm__result')
 
     const vo2Result = document.querySelector('.js-vo2_result')
     const classResult = document.querySelector('.js-classification_result')
@@ -228,11 +229,11 @@ function calcCooper(event) { //Funcao de calculo vo2
 
    
 
-    
+    let fcmResult = (220 - age)
 
     vo2Result.textContent = `VO2 Max: ${vo2.toFixed(2)}`;
     classResult.textContent = `Categoria: ${classification}`;
-    
+    fcm.textContent = `Frequência Cardíaca Máxima: ${fcmResult}`;
 
     
 }
@@ -250,28 +251,29 @@ calcForm.addEventListener('submit', calcCooper);
 
 
 
+const planilhaButton = document.querySelectorAll('.js-runner__button') //animação botao planilhas
+setInterval(()=> { 
+    planilhaButton.forEach((item)=> {
+        item.classList.toggle('animation')
+       
+    })
+    
 
-function planContentOpen1() {
-    const planBox1 = document.querySelector('.planilha-box1');
-    const planBoxClass1 = planBox1.classList;
-    const planContent1 = document.querySelector('.planilha-content1')
-    const planContentClass1 = planContent1.classList;
+}, 700)
 
+const boxPlanilha = document.querySelectorAll('.js-box');
+console.log(boxPlanilha);
+const contentPlanilha = document.querySelectorAll('.js-content');
+console.log(contentPlanilha);
 
-
-    planContentClass1.toggle('planilha-display');
-    planBoxClass1.toggle('planilha-color');
-
-
+function addClass(index) {
+    boxPlanilha[index].classList.toggle('planilha-color');
+    contentPlanilha[index].classList.toggle('planilha-display');
+    
 }
-function planContentOpen2() {
-    const planBox2 = document.querySelector('.planilha-box2');
-    const planBoxClass2 = planBox2.classList;
-    const planContent2 = document.querySelector('.planilha-content2')
-    const planContentClass2 = planContent2.classList;
 
-    planContentClass2.toggle('planilha-display');
-    planBoxClass2.toggle('planilha-color');
-
-
-}
+planilhaButton.forEach((itemButton, index) => {
+    itemButton.addEventListener('click', () => {
+        addClass(index);
+    })
+})

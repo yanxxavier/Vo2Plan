@@ -134,7 +134,7 @@
       
     }
     .tooltip {
-        left: 113%;
+        left: 158%;
         top: 0;
     }
     .planilhas-area {
@@ -227,7 +227,9 @@
     }
     .tooltip {
         left: 0;
-        top: 0;
+        top: -20%;
+        font-size: 0.7rem;
+        height: 200px;
       }
     .planilhas-img2,
     .planilhas-img1 {
@@ -275,8 +277,7 @@
         width: 20px;
         height: auto;
     }
-    .planilha-box1,
-    .planilha-box2 {
+    .planilha-box {
         width: 350px;
     }
     .footer-info {
