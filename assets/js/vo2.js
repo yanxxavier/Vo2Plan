@@ -34,12 +34,12 @@ function calcCooper(event) { //Funcao de calculo vo2
     
     let classification;
     
-    let vo2 = (0.0268 * distance) - 11.3;
+    let vo2 = (distance - 504.9)/44.73;
 
     let newGender = genderCheck ();
     
     if(newGender == 'masculino') {
-        if (age >= 13 && age <= 19) { //primeira class fem
+        if (age >= 13 && age <= 19) { //primeira class masc
             if (vo2 < 35) {
                 classification = "Muito Pobre";
             }else if (vo2 >= 35 && vo2 <= 38.3) {
