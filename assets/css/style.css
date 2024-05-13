@@ -393,6 +393,7 @@ input[type="radio"]:checked {
 }
 .planilha-color {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    
 }
 .planilha-content {
     margin-top: 1rem;
@@ -402,18 +403,18 @@ input[type="radio"]:checked {
 
 .planilha-display {
     display: flex;
-    animation: showPlan .5s forwards;
+    animation: showPlan 1s forwards;
 
 
 }
 @keyframes showPlan {
     from {
         opacity: 0;
-        transform: translate3d(0, -50px, 0);
+        max-height: 0;
     }
     to {
         opacity: 1;
-        transform: translate3d(0, 0, 0);
+        max-height: 600px;
     }
 }
 table {
