@@ -471,5 +471,17 @@ footer {
     transition: all ease-in-out 300ms;
 }
 
+.js-scroll {
+    opacity: 0;
+    transition: .3s;
+    transform: translate3d(-30px, 0, 0);
+
+}
+
+.js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
 
 
