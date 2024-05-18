@@ -1,24 +1,6 @@
-function toggleNav () { // Funcao para o botao Nav-Bar
-   const button = document.querySelector('.js-menu');
-   const links = document.querySelector('.nav-links');
-   const linkState = links.classList;
-
-    linkState.toggle('open')    
-}
-
-function genderCheck () { // Funcao para checar o genero
-    let radioBtns = document.querySelectorAll("input[name = 'generos']");
-    let gender;
-    let findSelected = () => {
-        return document.querySelector("input[name = 'generos']:checked").value; 
-    }
-    radioBtns.forEach(radioBtn => {
-        radioBtn.addEventListener('change', findSelected)
-    })
-    return gender = findSelected();
-}
-
-function initCalc() {
+import genderCheck from "./genderCheck.js";
+genderCheck();
+export default function initCalc() {
     function calcCooper(event) { //Funcao de calculo vo2
         event.preventDefault();
         const fcm = document.querySelector('.js-fcm__result')
@@ -225,67 +207,3 @@ function initCalc() {
     const calcForm = document.querySelector('.js-form');
     calcForm.addEventListener('submit', calcCooper);
 }
-initCalc();
-
-
-
-
-
-
-
-
-
-
-
-function initAnimationPlanilhas() {
-    const planilhaButton = document.querySelectorAll('.js-runner__button') //animação botao planilhas
-    setInterval(()=> { 
-        planilhaButton.forEach((item)=> {
-            item.classList.toggle('animation')      
-        })   
-    }, 700)
-    
-    const boxPlanilha = document.querySelectorAll('.js-box');
-    
-    const contentPlanilha = document.querySelectorAll('.js-content');
-   
-    
-    function addClass(index) {
-        boxPlanilha[index].classList.toggle('planilha-color');
-        contentPlanilha[index].classList.toggle('planilha-display');
-        
-    }
-    
-    planilhaButton.forEach((itemButton, index) => {
-        itemButton.addEventListener('click', () => {
-            addClass(index);
-        })
-    })
-}
-initAnimationPlanilhas();
-
-
-function initScrollAnimation(){
-    const sections = document.querySelectorAll('.js-scroll');
-    if(sections.length) {
-        const halfWindow = window.innerHeight * 0.7
-        function scrollAnimation() {
-            sections.forEach((section) => {
-                const sectionTop = section.getBoundingClientRect().top;
-                const isSectionVisible = (sectionTop - halfWindow) < 0
-                if(isSectionVisible) {
-                    section.classList.add('ativo')
-                }else {
-                    section.classList.remove('ativo')
-                }
-            })
-        }
-        scrollAnimation();
-        
-        window.addEventListener('scroll', scrollAnimation);
-    }
-
-}
-initScrollAnimation();
-
-
