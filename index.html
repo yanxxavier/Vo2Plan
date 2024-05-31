@@ -12,12 +12,12 @@
     <header>
         <nav class="desktop-nav">
             <img src="assets/images/logoVO2.png" alt="Logo Vo2">
-            <div class="menu-icon js-menu">
+            <div class="menu-icon" data-nav="menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-                <ul class="nav-links">
+                <ul class="nav-links" data-nav="links">
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#calculadora">Calculadora</a></li>
                     <li><a href="#planilhas">Planilhas</a></li>
@@ -28,7 +28,7 @@
 
     <main>
 
-        <section class="section-more js-scroll" id="more">
+        <section class="section-more" data-anime="scroll" id="more">
             
             <div class="more-area container">
                 <img src="assets/images/runner5.jpeg" alt="Corredor de Rua">
@@ -49,7 +49,7 @@
             </div>
         </section>
        
-        <section id="blog" class="js-scroll">
+        <section id="blog" data-anime="scroll">
 
 
             <h1 class="title">Últimas Notícias</h1>
@@ -100,7 +100,7 @@
             </div>
         </section> 
 
-        <section id="calculadora" class="js-scroll">
+        <section id="calculadora" data-anime="scroll">
             <h1 class="title">Calculadora</h1>
             <div class="calculadora-area">
                 <form class="form js-form">
@@ -140,7 +140,7 @@
             </div>
         </section>
 
-        <section id="planilhas" class="js-scroll">
+        <section id="planilhas" data-anime="scroll">
             <h1 class="title">Planilhas</h1>
             <div class="planilhas-area">
                 <div class="planilha-box js-box">
@@ -264,6 +264,8 @@
         </div>
             
     </footer>
+    
+
     
 
 
